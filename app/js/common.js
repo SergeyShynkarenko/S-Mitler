@@ -67,12 +67,35 @@ $(function() {
 
 	$('.reviews').owlCarousel({
 		loop: true,
-		items:1,
+		items: 1,
 		smartSpeed: 700,
 		nav: false,
 		autoHeight: true
+	});
 
-});
+	$('.partners').owlCarousel({
+		loop: true,
+		smartSpeed: 700,
+		nav: true,
+		dots: false,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		responsiveClass: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 2
+			},
+			992: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			}
+		}
+
+	});
 
 
 	//E-mail Ajax Send
